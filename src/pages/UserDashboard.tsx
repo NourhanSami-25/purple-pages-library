@@ -88,7 +88,7 @@ const UserDashboard = () => {
           {/* Header */}
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-3xl font-bold text-foreground">My Dashboard</h1>
+              <h1 className="text-3xl font-bold text-foreground">Hello, {userInfo.name}</h1>
               <p className="text-muted-foreground mt-1">Manage your profile and track your reading journey</p>
             </div>
           </div>
