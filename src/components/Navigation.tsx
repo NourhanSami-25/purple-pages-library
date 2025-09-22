@@ -65,13 +65,17 @@ const Navigation = () => {
 
           {/* User Actions */}
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="sm" className="hidden md:flex">
-              <User className="h-4 w-4 mr-2" />
-              Login
-            </Button>
-            <Button size="sm" className="hidden md:flex bg-gradient-primary hover:shadow-hover">
-              Register
-            </Button>
+            <Link to="/login">
+              <Button variant="ghost" size="sm" className="hidden md:flex">
+                <User className="h-4 w-4 mr-2" />
+                Login
+              </Button>
+            </Link>
+            <Link to="/register">
+              <Button size="sm" className="hidden md:flex bg-gradient-primary hover:shadow-hover">
+                Register
+              </Button>
+            </Link>
             
             {/* Mobile Menu Button */}
             <Button 
@@ -129,12 +133,16 @@ const Navigation = () => {
               
               {/* Mobile User Actions */}
               <div className="flex space-x-2 pt-2">
-                <Button variant="ghost" size="sm" className="flex-1">
-                  Login
-                </Button>
-                <Button size="sm" className="flex-1 bg-gradient-primary">
-                  Register
-                </Button>
+                <Link to="/login" className="flex-1">
+                  <Button variant="ghost" size="sm" className="w-full">
+                    Login
+                  </Button>
+                </Link>
+                <Link to="/register" className="flex-1">
+                  <Button size="sm" className="w-full bg-gradient-primary">
+                    Register
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
