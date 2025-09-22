@@ -57,6 +57,24 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Digital Library Design System
+        purple: {
+          primary: "hsl(var(--purple-primary))",
+          secondary: "hsl(var(--purple-secondary))",
+          light: "hsl(var(--purple-light))",
+          dark: "hsl(var(--purple-dark))",
+          glow: "hsl(var(--purple-glow))",
+        },
+      },
+      backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-card': 'var(--gradient-card)',
+      },
+      boxShadow: {
+        'purple': 'var(--shadow-purple)',
+        'card': 'var(--shadow-card)',
+        'hover': 'var(--shadow-hover)',
       },
       borderRadius: {
         lg: "var(--radius)",
