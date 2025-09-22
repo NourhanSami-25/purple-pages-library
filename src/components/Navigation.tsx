@@ -76,10 +76,9 @@ const Navigation = () => {
                 Register
               </Button>
             </Link>
-            <Link to="/admin/upload">
-              <Button variant="outline" size="sm" className="hidden md:flex">
-                <Shield className="h-4 w-4 mr-2" />
-                Admin
+            <Link to="/dashboard">
+              <Button variant="ghost" size="sm" className="hidden md:flex">
+                <User className="h-4 w-4" />
               </Button>
             </Link>
             
@@ -153,12 +152,12 @@ const Navigation = () => {
               
               {/* Mobile Admin Access */}
               <Link 
-                to="/admin/upload" 
+                to="/dashboard" 
                 className="text-sm font-medium py-2 flex items-center gap-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                <Shield className="h-4 w-4" />
-                Admin Dashboard
+                <User className="h-4 w-4" />
+                Dashboard
               </Link>
             </div>
           </div>

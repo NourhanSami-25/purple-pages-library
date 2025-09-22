@@ -9,6 +9,7 @@ import BookDetails from "./pages/BookDetails";
 import Favorites from "./pages/Favorites";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import UserDashboard from "./pages/UserDashboard";
 import NotFound from "./pages/NotFound";
 import AdminLayout from "./layouts/AdminLayout";
 import UploadBook from "./pages/admin/UploadBook";
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/dashboard" element={<UserDashboard />} />
           
           {/* Admin Routes */}
           <Route path="/admin/upload" element={<AdminLayout><UploadBook /></AdminLayout>} />
