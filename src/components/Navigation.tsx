@@ -42,6 +42,14 @@ const Navigation = () => {
             >
               Book Catalog
             </Link>
+            <Link 
+              to="/favorites" 
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                isActive('/favorites') ? 'text-primary' : 'text-muted-foreground'
+              }`}
+            >
+              Favorites
+            </Link>
           </div>
 
           {/* Search Bar - Desktop */}
@@ -108,6 +116,15 @@ const Navigation = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Book Catalog
+              </Link>
+              <Link 
+                to="/favorites" 
+                className={`text-sm font-medium py-2 ${
+                  isActive('/favorites') ? 'text-primary' : 'text-muted-foreground'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Favorites
               </Link>
               
               {/* Mobile User Actions */}

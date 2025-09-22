@@ -2,6 +2,7 @@ import { Star, Heart, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 
 interface BookCardProps {
   title: string;
@@ -87,13 +88,15 @@ const BookCard = ({ title, author, cover, rating, category, description, isFeatu
           )}
 
           {/* Action Button */}
-          <Button 
-            className="w-full bg-gradient-primary hover:shadow-purple transition-all duration-200"
-            size="sm"
-          >
-            <BookOpen className="h-4 w-4 mr-2" />
-            Read Now
-          </Button>
+          <Link to="/book/1">
+            <Button 
+              className="w-full bg-gradient-primary hover:shadow-purple transition-all duration-200"
+              size="sm"
+            >
+              <BookOpen className="h-4 w-4 mr-2" />
+              View Details
+            </Button>
+          </Link>
         </div>
       </CardContent>
     </Card>
