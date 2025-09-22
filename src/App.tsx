@@ -10,6 +10,10 @@ import Favorites from "./pages/Favorites";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
+import AdminLayout from "./layouts/AdminLayout";
+import UploadBook from "./pages/admin/UploadBook";
+import ManageTags from "./pages/admin/ManageTags";
+import ManageAuthors from "./pages/admin/ManageAuthors";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +30,12 @@ const App = () => (
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          
+          {/* Admin Routes */}
+          <Route path="/admin/upload" element={<AdminLayout><UploadBook /></AdminLayout>} />
+          <Route path="/admin/tags" element={<AdminLayout><ManageTags /></AdminLayout>} />
+          <Route path="/admin/authors" element={<AdminLayout><ManageAuthors /></AdminLayout>} />
+          
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

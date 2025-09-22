@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Search, BookOpen, User, Menu } from "lucide-react";
+import { Search, BookOpen, User, Menu, Shield } from "lucide-react";
 import { useState } from "react";
 
 const Navigation = () => {
@@ -76,6 +76,12 @@ const Navigation = () => {
                 Register
               </Button>
             </Link>
+            <Link to="/admin/upload">
+              <Button variant="outline" size="sm" className="hidden md:flex">
+                <Shield className="h-4 w-4 mr-2" />
+                Admin
+              </Button>
+            </Link>
             
             {/* Mobile Menu Button */}
             <Button 
@@ -144,6 +150,16 @@ const Navigation = () => {
                   </Button>
                 </Link>
               </div>
+              
+              {/* Mobile Admin Access */}
+              <Link 
+                to="/admin/upload" 
+                className="text-sm font-medium py-2 flex items-center gap-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <Shield className="h-4 w-4" />
+                Admin Dashboard
+              </Link>
             </div>
           </div>
         )}
