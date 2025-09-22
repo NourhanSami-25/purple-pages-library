@@ -72,8 +72,8 @@ const Favorites = () => {
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-foreground mb-4 flex items-center justify-center">
-            <Heart className="h-8 w-8 mr-3 text-red-500 fill-current" />
             My Favorites
+            <Heart className="h-8 w-8 ml-3 text-primary fill-current" />
           </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Your personal collection of favorite books. Keep track of the books you love and want to revisit.
